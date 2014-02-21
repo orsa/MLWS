@@ -66,7 +66,7 @@ public class SampleAdNetwork extends Agent {
 	private PublisherCatalog publisherCatalog;
 	private InitialCampaignMessage initialCampaignMessage;
 	private AdNetworkDailyNotification adNetworkDailyNotification;
-
+	
 	/*
 	 * The addresses of server entities to which the agent should send the daily
 	 * bids data
@@ -89,7 +89,7 @@ public class SampleAdNetwork extends Agent {
 	 * We maintain a collection (mapped by the campaign id) of the campaigns won
 	 * by our agent.
 	 */
-	private Map<Integer, CampaignData> myCampaigns;
+	private Map<Integer, CampaignData> myCampaigns; // also campaignes that already ended?
 
 	/*
 	 * the bidBundle to be sent daily to the AdX
@@ -119,27 +119,27 @@ public class SampleAdNetwork extends Agent {
 
 	@Override
 	protected void messageReceived(Message message) {
-		try { 
+		try {
 			Transportable content = message.getContent();
 			
 			//log.fine(message.getContent().getClass().toString());
 			
 			if (content instanceof InitialCampaignMessage) {
-				handleInitialCampaignMessage((InitialCampaignMessage) content);
+				handleInitialCampaignMessage((InitialCampaignMessage) content); // ownership: Or; who determines the budget?
 			} else if (content instanceof CampaignOpportunityMessage) {
-				handleICampaignOpportunityMessage((CampaignOpportunityMessage) content);
+				handleICampaignOpportunityMessage((CampaignOpportunityMessage) content); // ownership: Or
 			} else if (content instanceof CampaignReport) {
-				handleCampaignReport((CampaignReport) content);
+				handleCampaignReport((CampaignReport) content); 				// ownership: Shelly (possibly Or)
 			} else if (content instanceof AdNetworkDailyNotification) {
-				handleAdNetworkDailyNotification((AdNetworkDailyNotification) content);
+				handleAdNetworkDailyNotification((AdNetworkDailyNotification) content); // will be used by all of us
 			} else if (content instanceof AdxPublisherReport) {
-				handleAdxPublisherReport((AdxPublisherReport) content);
+				handleAdxPublisherReport((AdxPublisherReport) content); 		// ownership: Shelly
 			} else if (content instanceof SimulationStatus) {
-				handleSimulationStatus((SimulationStatus) content);
+				handleSimulationStatus((SimulationStatus) content);				// might be relevant for performance
 			} else if (content instanceof PublisherCatalog) {
-				handlePublisherCatalog((PublisherCatalog) content);
+				handlePublisherCatalog((PublisherCatalog) content);				// ownership: Shelly
 			} else if (content instanceof AdNetworkReport) {
-				handleAdNetworkReport((AdNetworkReport) content);
+				handleAdNetworkReport((AdNetworkReport) content);				// ownership: Shelly (possibly Or)
 			} else if (content instanceof StartInfo) {
 				handleStartInfo((StartInfo) content);
 			} else if (content instanceof BankStatus) {
@@ -197,7 +197,7 @@ public class SampleAdNetwork extends Agent {
 		adxAgentAddress = campaignMessage.getAdxAgentAddress();
 
 		CampaignData campaignData = new CampaignData(initialCampaignMessage);
-		campaignData.setBudget(initialCampaignMessage.getReachImps() / 1000.0);
+		campaignData.setBudget(initialCampaignMessage.getReachImps() / 1000.0); // TODO: rethink on this calculation
 
 		/*
 		 * The initial campaign is already allocated to our agent so we add it
@@ -229,7 +229,7 @@ public class SampleAdNetwork extends Agent {
 		 * therefore the total number of impressions may be treated as a reserve
 		 * (upper bound) price for the auction.
 		 */
-		long cmpBid = 1 + Math.abs((randomGenerator.nextLong())
+		long cmpBid = 1 + Math.abs((randomGenerator.nextLong()) // TODO: Or; here we determine the bid.
 				% (com.getReachImps()));
 
 		double cmpBidUnits = cmpBid / 1000.0;
@@ -246,7 +246,7 @@ public class SampleAdNetwork extends Agent {
 			double prevUcsBid = ucsBid;
 
 			/* UCS Bid should not exceed 0.2 */
-			ucsBid = Math.min(0.1 + 0.1*randomGenerator.nextDouble(), prevUcsBid * (1 + ucsTargetLevel - ucsLevel));
+			ucsBid = Math.min(0.1 + 0.1*randomGenerator.nextDouble(), prevUcsBid * (1 + ucsTargetLevel - ucsLevel)); // TODO: Omer; here we determine the ucs bid.
 
 			log.info("Day " + day + ": Adjusting ucs bid: was " + prevUcsBid
 					+ " level reported: " + ucsLevel + " target: "
@@ -256,7 +256,7 @@ public class SampleAdNetwork extends Agent {
 		}
 
 		/* Note: Campaign bid is in millis */
-		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.id,
+		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.id,  // here we send a bid for campaign oppor. and ucs combined.
 				cmpBid);
 		sendMessage(demandAgentAddress, bids);
 	}
@@ -329,7 +329,7 @@ public class SampleAdNetwork extends Agent {
 			 * revenue per imp
 			 */
 
-			Random rnd = new Random();
+			Random rnd = new Random(); // TODO: Shelly; he we set the bids for impressions
 			double avgCmpRevenuePerImp = campaign.budget / campaign.reachImps;
 			double rbid = 1000.0 * rnd.nextDouble() * avgCmpRevenuePerImp;
 
@@ -416,7 +416,7 @@ public class SampleAdNetwork extends Agent {
 	/**
 	 * Users and Publishers statistics: popularity and ad type orientation
 	 */
-	private void handleAdxPublisherReport(AdxPublisherReport adxPublisherReport) {
+	private void handleAdxPublisherReport(AdxPublisherReport adxPublisherReport) { // TODO: expand this; need to use the data and not just print it.
 		log.info("Publishers Report: ");
 		for (PublisherCatalogEntry publisherKey : adxPublisherReport.keys()) {
 			AdxPublisherReportEntry entry = adxPublisherReport
@@ -430,7 +430,8 @@ public class SampleAdNetwork extends Agent {
 	 * @param AdNetworkReport
 	 */
 	private void handleAdNetworkReport(AdNetworkReport adnetReport) {
-		
+		// TODO: Shelly - read class notes - why commented out? 
+		// This is a map per AdNetQuery of wins/costs/bids result for impression auction - go over this and use it
 		log.info("Day "+ day + " : AdNetworkReport");
 		/*
 		 for (AdNetworkKey adnetKey : adnetReport.keys()) {
@@ -453,7 +454,7 @@ public class SampleAdNetwork extends Agent {
 		ucsTargetLevel = 0.5 + (randomGenerator.nextInt(5) + 1) / 10.0;
 		
 		/* initial bid between 0.1 and 0.2 */
-		ucsBid = 0.1 + 0.1*randomGenerator.nextDouble();
+		ucsBid = 0.1 + 0.1*randomGenerator.nextDouble(); //TODO: Omer; check this out - the ucs bit for the furst day.
 		
 		myCampaigns = new HashMap<Integer, CampaignData>();
 		log.fine("AdNet " + getName() + " simulationSetup");
