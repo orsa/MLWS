@@ -1,0 +1,560 @@
+20/12 11:09:00 INFO SimpleAdNetwork|UNKNOWN Message Received: edu.umich.eecs.tac.props.AdvertiserInfo@bc76a1c1
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0 :BankStatus[0.000000]
+20/12 11:09:00 INFO SimpleAdNetwork|tau.tac.adx.report.demand.InitialCampaignMessage[790587066,1250,1,5,[HIGH_INCOME, FEMALE],2.0,1.5,demand,[]]
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0: Allocated campaign - Campaign ID 790587066: day 1 to 5 [HIGH_INCOME, FEMALE], reach: 1250 coefs: (v=2.0, m=1.5)
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0: Campaign opportunity - Campaign ID 1521446911: day 2 to 4 [HIGH_INCOME, MALE], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0: Campaign total budget bid: 1.515
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0: Initial ucs bid is 0.15274834323710193
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0 : Simulation Status Received
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0: Updated 36 Bid Bundle entries for Campaign id 790587066
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0: Sending BidBundle
+20/12 11:09:00 INFO SimpleAdNetwork|Day 0 ended. Starting next day
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1 :BankStatus[0.000000]
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Daily notification for campaign 1521446911
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1:  WON at cost 3.0. UCS Level set to 0.47829690000000014 at price 0.0 Qualit Score is: 1.0
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Campaign opportunity - Campaign ID 469476248: day 3 to 7 [MALE, YOUNG], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Campaign total budget bid: 3.005
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Adjusting ucs bid: was 0.15274834323710193 level reported: 0.47829690000000014 target: 0.8 adjusted: 0.14718212996067154
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1 : AdNetworkReport
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1 : Simulation Status Received
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Updated 36 Bid Bundle entries for Campaign id 1521446911
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Updated 36 Bid Bundle entries for Campaign id 790587066
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1: Sending BidBundle
+20/12 11:09:10 INFO SimpleAdNetwork|Day 1 ended. Starting next day
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2 :BankStatus[-0.146206]
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Updating campaign 790587066 stats: 628.0 tgtImps 269.0 nonTgtImps. Cost of imps is 8.113711991225606E-4
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Daily notification for campaign 469476248
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Qualit Score is: 1.0
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Campaign opportunity - Campaign ID 786698782: day 4 to 6 [HIGH_INCOME, OLD], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Campaign total budget bid: 4.021
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Adjusting ucs bid: was 0.14718212996067154 level reported: 0.47829690000000014 target: 0.8 adjusted: 0.19453107743362244
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2 : AdNetworkReport
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2 : Simulation Status Received
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Updated 36 Bid Bundle entries for Campaign id 1521446911
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Updated 36 Bid Bundle entries for Campaign id 790587066
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2: Sending BidBundle
+20/12 11:09:20 INFO SimpleAdNetwork|Day 2 ended. Starting next day
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3 :BankStatus[-0.297647]
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Updating campaign 790587066 stats: 1258.0 tgtImps 1296.0 nonTgtImps. Cost of imps is 0.0025401824536844253
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Updating campaign 1521446911 stats: 2505.0 tgtImps 7502.0 nonTgtImps. Cost of imps is 0.009552881531166992
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Daily notification for campaign 786698782
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Qualit Score is: 1.0
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Campaign opportunity - Campaign ID 656560737: day 5 to 14 [OLD, FEMALE], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Campaign total budget bid: 4.753
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Adjusting ucs bid: was 0.19453107743362244 level reported: 0.47829690000000014 target: 0.8 adjusted: 0.11804435639572117
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3 : AdNetworkReport
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3 : Simulation Status Received
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Updated 36 Bid Bundle entries for Campaign id 1521446911
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Updated 36 Bid Bundle entries for Campaign id 790587066
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3: Sending BidBundle
+20/12 11:09:30 INFO SimpleAdNetwork|Day 3 ended. Starting next day
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4 :BankStatus[-0.446726]
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Updating campaign 790587066 stats: 1573.0 tgtImps 1406.0 nonTgtImps. Cost of imps is 0.0032301707964293336
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Updating campaign 1521446911 stats: 5011.0 tgtImps 9536.0 nonTgtImps. Cost of imps is 0.015422278257535928
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Daily notification for campaign 656560737
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4:  allocated to DummyAdnetwork. UCS Level set to 0.47829690000000014 at price 0.0 Qualit Score is: 1.0
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Campaign opportunity - Campaign ID 1913322406: day 6 to 10 [HIGH_INCOME, OLD], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Campaign total budget bid: 5.583
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Adjusting ucs bid: was 0.11804435639572117 level reported: 0.47829690000000014 target: 0.8 adjusted: 0.1129320763061139
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4 : AdNetworkReport
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4 : Simulation Status Received
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Updated 36 Bid Bundle entries for Campaign id 790587066
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4: Sending BidBundle
+20/12 11:09:40 INFO SimpleAdNetwork|Day 4 ended. Starting next day
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5 :BankStatus[-0.606938]
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Updating campaign 790587066 stats: 1579.0 tgtImps 1406.0 nonTgtImps. Cost of imps is 0.0032357113662162033
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Updating campaign 1521446911 stats: 6265.0 tgtImps 41009.0 nonTgtImps. Cost of imps is 0.04424045054269364
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Daily notification for campaign 1913322406
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.0964287333769984
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Campaign opportunity - Campaign ID 1954030090: day 7 to 16 [FEMALE, LOW_INCOME], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Campaign total budget bid: 2.759
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Adjusting ucs bid: was 0.1129320763061139 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.1318567692546141
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5 : AdNetworkReport
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5 : Simulation Status Received
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5: Sending BidBundle
+20/12 11:09:50 INFO SimpleAdNetwork|Day 5 ended. Starting next day
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6 :BankStatus[2.729378]
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Updating campaign 790587066 stats: 1585.0 tgtImps 1438.0 nonTgtImps. Cost of imps is 0.0032902411530926733
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Daily notification for campaign 1954030090
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6:  WON at cost 3.2892862001309955. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1384217521906352
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Campaign opportunity - Campaign ID 1383280166: day 8 to 12 [FEMALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Campaign total budget bid: 2.302
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Adjusting ucs bid: was 0.1318567692546141 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.16726809134886397
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6 : Simulation Status Received
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6: Sending BidBundle
+20/12 11:10:00 INFO SimpleAdNetwork|Day 6 ended. Starting next day
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7 :BankStatus[4.041600]
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Daily notification for campaign 1383280166
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7:  WON at cost 5.692108760953176. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1384217521906352
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Campaign opportunity - Campaign ID 1274162593: day 9 to 11 [FEMALE, LOW_INCOME], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Campaign total budget bid: 4.756
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Adjusting ucs bid: was 0.16726809134886397 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.1017721997404863
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7 : AdNetworkReport
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7 : Simulation Status Received
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Updated 36 Bid Bundle entries for Campaign id 1383280166
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7: Sending BidBundle
+20/12 11:10:10 INFO SimpleAdNetwork|Day 7 ended. Starting next day
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8 :BankStatus[3.881592]
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Updating campaign 1954030090 stats: 7502.0 tgtImps 21578.0 nonTgtImps. Cost of imps is 0.028414955001144823
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Daily notification for campaign 1274162593
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8:  WON at cost 11.384217521906352. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1384217521906352
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Campaign opportunity - Campaign ID 1491802860: day 10 to 12 [MALE, YOUNG], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Campaign total budget bid: 2.609
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Adjusting ucs bid: was 0.1017721997404863 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.12910403993059155
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8 : AdNetworkReport
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8 : Simulation Status Received
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Updated 36 Bid Bundle entries for Campaign id 1274162593
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Updated 36 Bid Bundle entries for Campaign id 1383280166
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8: Sending BidBundle
+20/12 11:10:20 INFO SimpleAdNetwork|Day 8 ended. Starting next day
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9 :BankStatus[3.727068]
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Updating campaign 1954030090 stats: 15007.0 tgtImps 30114.0 nonTgtImps. Cost of imps is 0.04586390801465411
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Updating campaign 1383280166 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Daily notification for campaign 1491802860
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9:  WON at cost 5.077620995568027. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1384217521906352
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Campaign opportunity - Campaign ID 1277408809: day 11 to 15 [MALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Campaign total budget bid: 0.044
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Adjusting ucs bid: was 0.12910403993059155 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.11949231817866951
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9 : AdNetworkReport
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9 : Simulation Status Received
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Updated 36 Bid Bundle entries for Campaign id 1274162593
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Updated 36 Bid Bundle entries for Campaign id 1383280166
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Updated 36 Bid Bundle entries for Campaign id 1491802860
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9: Sending BidBundle
+20/12 11:10:30 INFO SimpleAdNetwork|Day 9 ended. Starting next day
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10 :BankStatus[3.575318]
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updating campaign 1274162593 stats: 5005.0 tgtImps 5053.0 nonTgtImps. Cost of imps is 0.011900207117056926
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updating campaign 1954030090 stats: 15007.0 tgtImps 30114.0 nonTgtImps. Cost of imps is 0.04586390801465411
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updating campaign 1383280166 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Daily notification for campaign 1277408809
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1384217521906352
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Campaign opportunity - Campaign ID 1734302429: day 12 to 16 [MALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Campaign total budget bid: 4.645
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Adjusting ucs bid: was 0.11949231817866951 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.10640568745689495
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10 : AdNetworkReport
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10 : Simulation Status Received
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updated 36 Bid Bundle entries for Campaign id 1274162593
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updated 36 Bid Bundle entries for Campaign id 1383280166
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Updated 36 Bid Bundle entries for Campaign id 1491802860
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10: Sending BidBundle
+20/12 11:10:40 INFO SimpleAdNetwork|Day 10 ended. Starting next day
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11 :BankStatus[3.422409]
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updating campaign 1274162593 stats: 10009.0 tgtImps 8427.0 nonTgtImps. Cost of imps is 0.020532448822042797
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updating campaign 1491802860 stats: 2504.0 tgtImps 3096.0 nonTgtImps. Cost of imps is 0.005585427040738637
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updating campaign 1954030090 stats: 15007.0 tgtImps 30114.0 nonTgtImps. Cost of imps is 0.04586390801465411
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updating campaign 1383280166 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Daily notification for campaign 1734302429
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11:  WON at cost 5.077620995568027. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1384217521906352
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Campaign opportunity - Campaign ID 1281922574: day 13 to 17 [FEMALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Campaign total budget bid: 0.212
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Adjusting ucs bid: was 0.10640568745689495 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.10345796397906676
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11 : AdNetworkReport
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11 : Simulation Status Received
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updated 36 Bid Bundle entries for Campaign id 1383280166
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updated 36 Bid Bundle entries for Campaign id 1734302429
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Updated 36 Bid Bundle entries for Campaign id 1491802860
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11: Sending BidBundle
+20/12 11:10:50 INFO SimpleAdNetwork|Day 11 ended. Starting next day
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12 :BankStatus[3.271458]
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Updating campaign 1274162593 stats: 12512.0 tgtImps 9918.0 nonTgtImps. Cost of imps is 0.02491585138834084
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Updating campaign 1491802860 stats: 5008.0 tgtImps 6096.0 nonTgtImps. Cost of imps is 0.011503413876392553
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Updating campaign 1954030090 stats: 15007.0 tgtImps 30114.0 nonTgtImps. Cost of imps is 0.04586390801465411
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Updating campaign 1383280166 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Daily notification for campaign 1281922574
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1513756401375792
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Campaign opportunity - Campaign ID 73815391: day 14 to 16 [HIGH_INCOME, OLD], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Campaign total budget bid: 0.825
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Adjusting ucs bid: was 0.10345796397906676 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.13124253132732092
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12 : AdNetworkReport
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12 : Simulation Status Received
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Updated 36 Bid Bundle entries for Campaign id 1734302429
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12: Sending BidBundle
+20/12 11:11:00 INFO SimpleAdNetwork|Day 12 ended. Starting next day
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13 :BankStatus[16.327542]
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Updating campaign 1491802860 stats: 6264.0 tgtImps 7569.0 nonTgtImps. Cost of imps is 0.014189261194476655
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Updating campaign 1954030090 stats: 15010.0 tgtImps 30114.0 nonTgtImps. Cost of imps is 0.04586534113797964
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Updating campaign 1734302429 stats: 2504.0 tgtImps 2555.0 nonTgtImps. Cost of imps is 0.005192534617830339
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Updating campaign 1383280166 stats: 0.0 tgtImps 0.0 nonTgtImps. Cost of imps is 0.0
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Daily notification for campaign 73815391
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 0.880602091110008
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Campaign opportunity - Campaign ID 1527156932: day 15 to 17 [FEMALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Campaign total budget bid: 4.102
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Adjusting ucs bid: was 0.13124253132732092 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.16648889429805486
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13 : AdNetworkReport
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13 : Simulation Status Received
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Updated 36 Bid Bundle entries for Campaign id 1734302429
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13: Sending BidBundle
+20/12 11:11:10 INFO SimpleAdNetwork|Day 13 ended. Starting next day
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14 :BankStatus[22.067140]
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Updating campaign 1954030090 stats: 15014.0 tgtImps 38392.0 nonTgtImps. Cost of imps is 0.05421088838578174
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Updating campaign 1734302429 stats: 5006.0 tgtImps 6264.0 nonTgtImps. Cost of imps is 0.012597925484241573
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Daily notification for campaign 1527156932
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 0.880602091110008
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Campaign opportunity - Campaign ID 502657735: day 16 to 20 [LOW_INCOME, YOUNG], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Campaign total budget bid: 4.922
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Adjusting ucs bid: was 0.16648889429805486 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.18856866579242748
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14 : AdNetworkReport
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14 : Simulation Status Received
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Updated 36 Bid Bundle entries for Campaign id 1734302429
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14: Sending BidBundle
+20/12 11:11:20 INFO SimpleAdNetwork|Day 14 ended. Starting next day
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15 :BankStatus[21.920197]
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Updating campaign 1954030090 stats: 15018.0 tgtImps 38392.0 nonTgtImps. Cost of imps is 0.054217557392873664
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Updating campaign 1734302429 stats: 6261.0 tgtImps 6777.0 nonTgtImps. Cost of imps is 0.014876625286339384
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Daily notification for campaign 502657735
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 0.880602091110008
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Campaign opportunity - Campaign ID 1812884903: day 17 to 26 [HIGH_INCOME, MALE], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Campaign total budget bid: 4.04
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Adjusting ucs bid: was 0.18856866579242748 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.14837112076284578
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15 : AdNetworkReport
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15 : Simulation Status Received
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Updated 36 Bid Bundle entries for Campaign id 1954030090
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Updated 36 Bid Bundle entries for Campaign id 1734302429
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15: Sending BidBundle
+20/12 11:11:30 INFO SimpleAdNetwork|Day 15 ended. Starting next day
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16 :BankStatus[21.767239]
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Updating campaign 1954030090 stats: 15021.0 tgtImps 51935.0 nonTgtImps. Cost of imps is 0.06852763231347
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Updating campaign 1734302429 stats: 6264.0 tgtImps 6777.0 nonTgtImps. Cost of imps is 0.014882232669683066
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Daily notification for campaign 1812884903
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 0.880602091110008
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Campaign opportunity - Campaign ID 495335598: day 18 to 20 [HIGH_INCOME, FEMALE], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Campaign total budget bid: 2.288
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Adjusting ucs bid: was 0.14837112076284578 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.11640237589841357
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16 : AdNetworkReport
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16 : Simulation Status Received
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16: Sending BidBundle
+20/12 11:11:40 INFO SimpleAdNetwork|Day 16 ended. Starting next day
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17 :BankStatus[21.621433]
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Updating campaign 1954030090 stats: 15025.0 tgtImps 51935.0 nonTgtImps. Cost of imps is 0.06853445760102692
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Updating campaign 1734302429 stats: 6267.0 tgtImps 6777.0 nonTgtImps. Cost of imps is 0.01488792307762842
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Daily notification for campaign 495335598
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17:  WON at cost 2.6968206682851235. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.0778077777497979
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Campaign opportunity - Campaign ID 1996965690: day 19 to 23 [HIGH_INCOME, OLD], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Campaign total budget bid: 7.477
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Adjusting ucs bid: was 0.11640237589841357 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.11797389648823794
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17 : Simulation Status Received
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Updated 36 Bid Bundle entries for Campaign id 495335598
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17: Sending BidBundle
+20/12 11:11:50 INFO SimpleAdNetwork|Day 17 ended. Starting next day
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18 :BankStatus[30.664714]
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Daily notification for campaign 1996965690
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18:  WON at cost 16.16711666624697. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.0778077777497979
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Campaign opportunity - Campaign ID 1607355415: day 20 to 29 [HIGH_INCOME, OLD], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Campaign total budget bid: 8.251
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Adjusting ucs bid: was 0.11797389648823794 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.14965684815522262
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18 : AdNetworkReport
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18 : Simulation Status Received
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Updated 36 Bid Bundle entries for Campaign id 495335598
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Updated 36 Bid Bundle entries for Campaign id 1996965690
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18: Sending BidBundle
+20/12 11:12:00 INFO SimpleAdNetwork|Day 18 ended. Starting next day
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19 :BankStatus[30.513529]
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Updating campaign 495335598 stats: 5002.0 tgtImps 5227.0 nonTgtImps. Cost of imps is 0.010769540433615773
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Daily notification for campaign 1607355415
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.0778077777497979
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Campaign opportunity - Campaign ID 1595166363: day 21 to 23 [HIGH_INCOME, FEMALE], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Campaign total budget bid: 7.4
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Adjusting ucs bid: was 0.14965684815522262 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.18984854163894102
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19 : AdNetworkReport
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19 : Simulation Status Received
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Updated 36 Bid Bundle entries for Campaign id 495335598
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Updated 36 Bid Bundle entries for Campaign id 1996965690
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19: Sending BidBundle
+20/12 11:12:11 INFO SimpleAdNetwork|Day 19 ended. Starting next day
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20 :BankStatus[30.354958]
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Updating campaign 495335598 stats: 10011.0 tgtImps 8925.0 nonTgtImps. Cost of imps is 0.021163211197965638
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Updating campaign 1996965690 stats: 7507.0 tgtImps 6066.0 nonTgtImps. Cost of imps is 0.015148670078934789
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Daily notification for campaign 1595166363
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.0778077777497979
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Campaign opportunity - Campaign ID 430783021: day 22 to 26 [HIGH_INCOME, YOUNG], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Campaign total budget bid: 3.927
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Adjusting ucs bid: was 0.18984854163894102 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.10858330540325661
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20 : AdNetworkReport
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20 : Simulation Status Received
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Updated 36 Bid Bundle entries for Campaign id 1996965690
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20: Sending BidBundle
+20/12 11:12:22 INFO SimpleAdNetwork|Day 20 ended. Starting next day
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21 :BankStatus[30.171588]
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Updating campaign 495335598 stats: 12517.0 tgtImps 10830.0 nonTgtImps. Cost of imps is 0.025937194066308504
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Updating campaign 1996965690 stats: 15011.0 tgtImps 73757.0 nonTgtImps. Cost of imps is 0.0855141716478926
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Daily notification for campaign 430783021
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.127247462236249
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Campaign opportunity - Campaign ID 1095876037: day 23 to 32 [HIGH_INCOME, YOUNG], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Campaign total budget bid: 1.058
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Adjusting ucs bid: was 0.10858330540325661 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.13774432931904979
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21 : AdNetworkReport
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21 : Simulation Status Received
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Updated 36 Bid Bundle entries for Campaign id 1996965690
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21: Sending BidBundle
+20/12 11:12:30 INFO SimpleAdNetwork|Day 21 ended. Starting next day
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22 :BankStatus[33.151899]
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Updating campaign 1996965690 stats: 18763.0 tgtImps 75261.0 nonTgtImps. Cost of imps is 0.09103467946924917
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Daily notification for campaign 1095876037
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22:  WON at cost 5.636237311181245. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.127247462236249
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Campaign opportunity - Campaign ID 1748999338: day 24 to 26 [MALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Campaign total budget bid: 0.301
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Adjusting ucs bid: was 0.13774432931904979 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.1152566473203097
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22 : AdNetworkReport
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22 : Simulation Status Received
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Updated 36 Bid Bundle entries for Campaign id 1996965690
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22: Sending BidBundle
+20/12 11:12:40 INFO SimpleAdNetwork|Day 22 ended. Starting next day
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23 :BankStatus[33.006096]
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Updating campaign 1996965690 stats: 18766.0 tgtImps 75261.0 nonTgtImps. Cost of imps is 0.09103965261678235
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Daily notification for campaign 1748999338
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23:  allocated to . UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.127247462236249
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Campaign opportunity - Campaign ID 1490961502: day 25 to 27 [OLD, LOW_INCOME], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Campaign total budget bid: 10.667
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Adjusting ucs bid: was 0.1152566473203097 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.14620985726800473
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23 : AdNetworkReport
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23 : Simulation Status Received
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23: Sending BidBundle
+20/12 11:12:51 INFO SimpleAdNetwork|Day 23 ended. Starting next day
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24 :BankStatus[32.855201]
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Updating campaign 1996965690 stats: 18769.0 tgtImps 75261.0 nonTgtImps. Cost of imps is 0.09104358913829073
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Updating campaign 1095876037 stats: 2504.0 tgtImps 7194.0 nonTgtImps. Cost of imps is 0.010185843155396154
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Daily notification for campaign 1490961502
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24:  WON at cost 16.908711933543735. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1469215900716243
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Campaign opportunity - Campaign ID 338955631: day 26 to 28 [FEMALE, LOW_INCOME], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Campaign total budget bid: 7.0
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Adjusting ucs bid: was 0.14620985726800473 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.11467786873258207
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24 : AdNetworkReport
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24 : Simulation Status Received
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Updated 36 Bid Bundle entries for Campaign id 1490961502
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24: Sending BidBundle
+20/12 11:13:00 INFO SimpleAdNetwork|Day 24 ended. Starting next day
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25 :BankStatus[51.460291]
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Updating campaign 1095876037 stats: 5007.0 tgtImps 11125.0 nonTgtImps. Cost of imps is 0.017336405701241925
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Daily notification for campaign 338955631
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1469215900716243
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Campaign opportunity - Campaign ID 1693454339: day 27 to 31 [HIGH_INCOME, MALE], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Campaign total budget bid: 1.203
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Adjusting ucs bid: was 0.11467786873258207 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.11819971003252301
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25 : AdNetworkReport
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25 : Simulation Status Received
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Updated 36 Bid Bundle entries for Campaign id 1490961502
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25: Sending BidBundle
+20/12 11:13:11 INFO SimpleAdNetwork|Day 25 ended. Starting next day
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26 :BankStatus[51.306134]
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Updating campaign 1490961502 stats: 7502.0 tgtImps 6383.0 nonTgtImps. Cost of imps is 0.015245213044107886
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Updating campaign 1095876037 stats: 6259.0 tgtImps 11234.0 nonTgtImps. Cost of imps is 0.018803339523163303
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Daily notification for campaign 1693454339
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1469215900716243
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Campaign opportunity - Campaign ID 2131848731: day 28 to 37 [HIGH_INCOME, YOUNG], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Campaign total budget bid: 0.526
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Adjusting ucs bid: was 0.11819971003252301 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.14994330595914734
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26 : AdNetworkReport
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26 : Simulation Status Received
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Updated 36 Bid Bundle entries for Campaign id 1490961502
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26: Sending BidBundle
+20/12 11:13:21 INFO SimpleAdNetwork|Day 26 ended. Starting next day
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27 :BankStatus[51.152564]
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Updating campaign 1490961502 stats: 15005.0 tgtImps 10402.0 nonTgtImps. Cost of imps is 0.03078259806346703
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Updating campaign 1095876037 stats: 6262.0 tgtImps 11237.0 nonTgtImps. Cost of imps is 0.018806556140089824
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Daily notification for campaign 2131848731
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1469215900716243
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Campaign opportunity - Campaign ID 1457122431: day 29 to 31 [OLD, MALE], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Campaign total budget bid: 10.228
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Adjusting ucs bid: was 0.14994330595914734 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.10214341950277281
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27 : AdNetworkReport
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27 : Simulation Status Received
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27: Sending BidBundle
+20/12 11:13:30 INFO SimpleAdNetwork|Day 27 ended. Starting next day
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28 :BankStatus[51.004542]
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Updating campaign 1490961502 stats: 18758.0 tgtImps 11295.0 nonTgtImps. Cost of imps is 0.035183333889141924
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Updating campaign 1095876037 stats: 6266.0 tgtImps 11269.0 nonTgtImps. Cost of imps is 0.01884990910461823
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Daily notification for campaign 1457122431
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1546187296689745
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Campaign opportunity - Campaign ID 1505561529: day 30 to 34 [FEMALE, YOUNG], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Campaign total budget bid: 4.824
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Adjusting ucs bid: was 0.10214341950277281 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.12957495410101794
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28 : AdNetworkReport
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28 : Simulation Status Received
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28: Sending BidBundle
+20/12 11:13:40 INFO SimpleAdNetwork|Day 28 ended. Starting next day
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29 :BankStatus[70.468619]
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Updating campaign 1095876037 stats: 6269.0 tgtImps 11272.0 nonTgtImps. Cost of imps is 0.01885960711635964
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Daily notification for campaign 1505561529
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1546187296689745
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Campaign opportunity - Campaign ID 269837481: day 31 to 35 [HIGH_INCOME, MALE], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Campaign total budget bid: 5.796
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Adjusting ucs bid: was 0.12957495410101794 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.11286392481681301
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29 : AdNetworkReport
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29 : Simulation Status Received
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29: Sending BidBundle
+20/12 11:13:50 INFO SimpleAdNetwork|Day 29 ended. Starting next day
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30 :BankStatus[70.322814]
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Updating campaign 1095876037 stats: 6275.0 tgtImps 11275.0 nonTgtImps. Cost of imps is 0.018867861067671826
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Daily notification for campaign 269837481
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30:  WON at cost 9.022843328353622. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1546187296689745
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Campaign opportunity - Campaign ID 1948229614: day 32 to 34 [MALE, LOW_INCOME], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Campaign total budget bid: 10.582
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Adjusting ucs bid: was 0.11286392481681301 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.14317454760169146
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30 : AdNetworkReport
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30 : Simulation Status Received
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Updated 36 Bid Bundle entries for Campaign id 269837481
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30: Sending BidBundle
+20/12 11:14:00 INFO SimpleAdNetwork|Day 30 ended. Starting next day
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31 :BankStatus[70.177014]
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Updating campaign 1095876037 stats: 6278.0 tgtImps 11275.0 nonTgtImps. Cost of imps is 0.018868776019573152
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Daily notification for campaign 1948229614
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31:  WON at cost 17.319280945034617. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1546187296689745
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Campaign opportunity - Campaign ID 1393458358: day 33 to 42 [MALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Campaign total budget bid: 0.396
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Adjusting ucs bid: was 0.14317454760169146 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.13403035551967651
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31 : AdNetworkReport
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31 : Simulation Status Received
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Updated 36 Bid Bundle entries for Campaign id 1948229614
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Updated 36 Bid Bundle entries for Campaign id 269837481
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Updated 36 Bid Bundle entries for Campaign id 1095876037
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31: Sending BidBundle
+20/12 11:14:11 INFO SimpleAdNetwork|Day 31 ended. Starting next day
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32 :BankStatus[70.022194]
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Updating campaign 1095876037 stats: 6284.0 tgtImps 11275.0 nonTgtImps. Cost of imps is 0.01887488078345334
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Updating campaign 269837481 stats: 5007.0 tgtImps 14179.0 nonTgtImps. Cost of imps is 0.018034067754671358
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Daily notification for campaign 1393458358
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32:  allocated to . UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1546187296689745
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Campaign opportunity - Campaign ID 718185540: day 34 to 38 [MALE, YOUNG], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Campaign total budget bid: 3.994
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Adjusting ucs bid: was 0.13403035551967651 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.16054453419013545
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32 : AdNetworkReport
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32 : Simulation Status Received
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Updated 36 Bid Bundle entries for Campaign id 1948229614
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Updated 36 Bid Bundle entries for Campaign id 269837481
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32: Sending BidBundle
+20/12 11:14:21 INFO SimpleAdNetwork|Day 32 ended. Starting next day
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33 :BankStatus[69.865274]
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Updating campaign 1948229614 stats: 7505.0 tgtImps 1851.0 nonTgtImps. Cost of imps is 0.011701185399182471
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Updating campaign 1095876037 stats: 6290.0 tgtImps 11287.0 nonTgtImps. Cost of imps is 0.018895832500913413
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Updating campaign 269837481 stats: 10011.0 tgtImps 18962.0 nonTgtImps. Cost of imps is 0.028551546433657697
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Daily notification for campaign 718185540
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33:  WON at cost 4.004752257108038. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1594350839225882
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Campaign opportunity - Campaign ID 243424006: day 35 to 39 [HIGH_INCOME, MALE], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Campaign total budget bid: 0.479
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Adjusting ucs bid: was 0.16054453419013545 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.15175125041213938
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33 : AdNetworkReport
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33 : Simulation Status Received
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Updated 36 Bid Bundle entries for Campaign id 1948229614
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Updated 36 Bid Bundle entries for Campaign id 718185540
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Updated 36 Bid Bundle entries for Campaign id 269837481
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33: Sending BidBundle
+20/12 11:14:31 INFO SimpleAdNetwork|Day 33 ended. Starting next day
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34 :BankStatus[76.259017]
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Updating campaign 1948229614 stats: 15011.0 tgtImps 10685.0 nonTgtImps. Cost of imps is 0.03039609919520247
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Updating campaign 269837481 stats: 12512.0 tgtImps 24552.0 nonTgtImps. Cost of imps is 0.03666809114630628
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Daily notification for campaign 243424006
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34:  WON at cost 4.021457603273452. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1594350839225882
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Campaign opportunity - Campaign ID 1048787955: day 36 to 38 [FEMALE, LOW_INCOME], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Campaign total budget bid: 1.652
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Adjusting ucs bid: was 0.15175125041213938 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.1471167627934016
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34 : AdNetworkReport
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34 : Simulation Status Received
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Updated 36 Bid Bundle entries for Campaign id 243424006
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Updated 36 Bid Bundle entries for Campaign id 718185540
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Updated 36 Bid Bundle entries for Campaign id 269837481
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34: Sending BidBundle
+20/12 11:14:42 INFO SimpleAdNetwork|Day 34 ended. Starting next day
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35 :BankStatus[76.094273]
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Updating campaign 1948229614 stats: 18765.0 tgtImps 15037.0 nonTgtImps. Cost of imps is 0.040087313343471986
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Updating campaign 718185540 stats: 5004.0 tgtImps 17035.0 nonTgtImps. Cost of imps is 0.028190292154846284
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Updating campaign 269837481 stats: 12515.0 tgtImps 24566.0 nonTgtImps. Cost of imps is 0.0366745114693076
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Daily notification for campaign 1048787955
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35:  WON at cost 4.021457603273452. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1597339547556882
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Campaign opportunity - Campaign ID 1843315888: day 37 to 46 [HIGH_INCOME, YOUNG], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Campaign total budget bid: 4.344
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Adjusting ucs bid: was 0.1471167627934016 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.14922448045350473
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35 : AdNetworkReport
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35 : Simulation Status Received
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Updated 36 Bid Bundle entries for Campaign id 1048787955
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Updated 36 Bid Bundle entries for Campaign id 243424006
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Updated 36 Bid Bundle entries for Campaign id 718185540
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35: Sending BidBundle
+20/12 11:14:51 INFO SimpleAdNetwork|Day 35 ended. Starting next day
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36 :BankStatus[96.025436]
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Updating campaign 243424006 stats: 2503.0 tgtImps 3141.0 nonTgtImps. Cost of imps is 0.005843601700564172
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Updating campaign 718185540 stats: 10007.0 tgtImps 30084.0 nonTgtImps. Cost of imps is 0.046839346558596034
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Updating campaign 269837481 stats: 12515.0 tgtImps 24566.0 nonTgtImps. Cost of imps is 0.0366745114693076
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Daily notification for campaign 1843315888
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36:  allocated to DummyAdnetwork. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1599709911250158
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Campaign opportunity - Campaign ID 1624069734: day 38 to 42 [MALE, LOW_INCOME], reach: 15000 coefs: (v=2.0, m=1.5)
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Campaign total budget bid: 2.224
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Adjusting ucs bid: was 0.14922448045350473 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.1627169029412989
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36 : AdNetworkReport
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36 : Simulation Status Received
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Updated 36 Bid Bundle entries for Campaign id 1048787955
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Updated 36 Bid Bundle entries for Campaign id 243424006
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Updated 36 Bid Bundle entries for Campaign id 718185540
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36: Sending BidBundle
+20/12 11:15:01 INFO SimpleAdNetwork|Day 36 ended. Starting next day
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37 :BankStatus[106.339108]
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updating campaign 243424006 stats: 5005.0 tgtImps 7757.0 nonTgtImps. Cost of imps is 0.012371974955277872
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updating campaign 718185540 stats: 12507.0 tgtImps 31340.0 nonTgtImps. Cost of imps is 0.0504774947413449
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updating campaign 1048787955 stats: 2502.0 tgtImps 4271.0 nonTgtImps. Cost of imps is 0.006213835065548554
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Daily notification for campaign 1624069734
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37:  WON at cost 3.6779674078127482. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1599709911250158
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Campaign opportunity - Campaign ID 1717886711: day 39 to 48 [LOW_INCOME, YOUNG], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Campaign total budget bid: 1.222
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Adjusting ucs bid: was 0.1627169029412989 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.17971101752865826
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37 : AdNetworkReport
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37 : Simulation Status Received
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updated 36 Bid Bundle entries for Campaign id 1048787955
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updated 36 Bid Bundle entries for Campaign id 1624069734
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updated 36 Bid Bundle entries for Campaign id 243424006
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Updated 36 Bid Bundle entries for Campaign id 718185540
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37: Sending BidBundle
+20/12 11:15:11 INFO SimpleAdNetwork|Day 37 ended. Starting next day
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38 :BankStatus[106.190229]
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Updating campaign 243424006 stats: 6257.0 tgtImps 8531.0 nonTgtImps. Cost of imps is 0.014519084249243749
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Updating campaign 718185540 stats: 12513.0 tgtImps 31346.0 nonTgtImps. Cost of imps is 0.050484199003245626
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Updating campaign 1048787955 stats: 5005.0 tgtImps 5371.0 nonTgtImps. Cost of imps is 0.010217234099626955
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Daily notification for campaign 1717886711
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38:  WON at cost 3.6779674078127482. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1599709911250158
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Campaign opportunity - Campaign ID 1546443518: day 40 to 44 [HIGH_INCOME, FEMALE], reach: 5000 coefs: (v=2.0, m=1.5)
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Campaign total budget bid: 1.886
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Adjusting ucs bid: was 0.17971101752865826 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.12953391118183727
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38 : AdNetworkReport
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38 : Simulation Status Received
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Updated 36 Bid Bundle entries for Campaign id 1717886711
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Updated 36 Bid Bundle entries for Campaign id 1624069734
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Updated 36 Bid Bundle entries for Campaign id 243424006
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38: Sending BidBundle
+20/12 11:15:21 INFO SimpleAdNetwork|Day 38 ended. Starting next day
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39 :BankStatus[106.039357]
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updating campaign 1624069734 stats: 7509.0 tgtImps 1098.0 nonTgtImps. Cost of imps is 0.007832161083140058
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updating campaign 243424006 stats: 6260.0 tgtImps 8575.0 nonTgtImps. Cost of imps is 0.014580843108267946
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updating campaign 718185540 stats: 12515.0 tgtImps 31346.0 nonTgtImps. Cost of imps is 0.05049104893741928
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updating campaign 1048787955 stats: 6256.0 tgtImps 6110.0 nonTgtImps. Cost of imps is 0.012460648537603761
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Daily notification for campaign 1546443518
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39:  WON at cost 5.7998549556250785. UCS Level set to 0.5314410000000002 at price 0.0 Qualit Score is: 1.1600332615304239
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Campaign opportunity - Campaign ID 1760737323: day 41 to 43 [MALE, YOUNG], reach: 10000 coefs: (v=2.0, m=1.5)
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Campaign total budget bid: 5.602
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Adjusting ucs bid: was 0.12953391118183727 level reported: 0.5314410000000002 target: 0.8 adjusted: 0.16432140883492027
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39 : AdNetworkReport
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39 : Simulation Status Received
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updated 36 Bid Bundle entries for Campaign id 1717886711
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updated 36 Bid Bundle entries for Campaign id 1624069734
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Updated 36 Bid Bundle entries for Campaign id 1546443518
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39: Sending BidBundle
+20/12 12:30:10 INFO SimpleAdNetwork|Day 39 ended. Starting next day
+20/12 12:30:16 SEVERE agentware.SimClient|************************************************************
+20/12 12:30:16 SEVERE agentware.SimClient|* Forced Simulation End
+20/12 12:30:16 SEVERE agentware.SimClient|* forcing simulation to end at time unit 62 (max 61 time units)
+20/12 12:30:16 SEVERE agentware.SimClient|************************************************************

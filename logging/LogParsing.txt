@@ -1,0 +1,30 @@
+  ______    ___    ______           ___     ____    _  __
+ /_  __/   /   |  / ____/          /   |   / __ \  | |/ /
+  / /     / /| | / /      ______  / /| |  / / / /  |   / 
+ / /     / ___ |/ /___   /_____/ / ___ | / /_/ /  /   |  
+/_/     /_/  |_|\____/          /_/  |_|/_____/  /_/|_|  
+                                                         
+                                                         
+In this folder you will find the two basic files required for game log parsing.
+In order to implement  a log parser, you will need to:
+	1. Create a class that extends edu.umich.eecs.tac.Parser. (In our example, that will be the tau.tac.adx.parser.GeneralParser class.)
+	2. In it, you will override the inherited (protected void message(int sender, int receiver, Transportable content)) method.
+	   This methods will be called for each message in the log file, according to the order that they were sent in the game.
+	   The first parameter indicates where the message originated from.
+	   The second parameter indicates the desired recipient for the message.
+	   An the third one will be the message itself.
+	3. There are two main types of messages:
+		A. Regular messages - (such as AdNetworkDailyNotification)
+								Contain simple data, with getter methods.
+		B. Complex messages - (such as CampaignReport)
+								Contain a mapping between keys and values. In the CampaignReport example, the keys will be the
+								campaign id (encapsulated by CampaignReportKey), and the values will be the campaign report (encapsulated by CampaignReportEntry).
+	4. To keep track of the current day (of which all following messages relate to), you can extract it from the SimulationStatus message (getCurrentDate() method).
+	5. After you have a new class, you will need to create an instance of it in a new class, extending se.sics.tasim.logtool.LogHandler (See GeneralHandler for reference).
+	6. And finally, edit the runLogParser.sh and replace the handler class from tau.tac.adx.parser.GeneralHandler to your class.
+	
+An example for parsing messages is included in the GeneralParser.java file.
+It parses several messages:
+	Regular - AdNetworkDailyNotification and BankStatus
+	Copmlex - CampaignReport and AdNetworkReport
+	Simulation - SimulationStatus (Regular message sent from the simulation)
