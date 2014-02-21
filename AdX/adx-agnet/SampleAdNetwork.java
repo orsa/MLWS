@@ -119,7 +119,7 @@ public class SampleAdNetwork extends Agent {
 
 	@Override
 	protected void messageReceived(Message message) {
-		try {
+		try { 
 			Transportable content = message.getContent();
 			
 			//log.fine(message.getContent().getClass().toString());
