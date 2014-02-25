@@ -1,115 +1,88 @@
 package tau.tac.adx.agents.oos;
+import java.util.Set;
+
 import tau.tac.adx.demand.CampaignStats;
+import tau.tac.adx.props.AdxQuery;
 import tau.tac.adx.report.adn.MarketSegment;
 import tau.tac.adx.report.demand.CampaignOpportunityMessage;
 import tau.tac.adx.report.demand.InitialCampaignMessage;
 
 
 public class CampaignData {
-		/* campaign attributes as set by server */
-		private Long reachImps;
-		private long dayStart;
-		private long dayEnd;
-		private MarketSegment targetSegment;
-		double videoCoef;
-		double mobileCoef;
-		private int id;
+	/* campaign attributes as set by server */
+	Long reachImps;
+	long dayStart;
+	long dayEnd;
+	Set<MarketSegment> targetSegment;
+	double videoCoef;
+	double mobileCoef;
+	int id;
+	private AdxQuery[] campaignQueries;//array of queries relvent for the campaign.
 
-		/* campaign info as reported */
-		private CampaignStats stats;
-		private double budget;
+	/* campaign info as reported */
+	CampaignStats stats;
+	double budget;
 
-		public CampaignData(InitialCampaignMessage icm) {
-			setReachImps(icm.getReachImps());
-			setDayStart(icm.getDayStart());
-			setDayEnd(icm.getDayEnd());
-			setTargetSegment(icm.getTargetSegment());
-			videoCoef = icm.getVideoCoef();
-			mobileCoef = icm.getMobileCoef();
-			setId(icm.getId());
+	public CampaignData(InitialCampaignMessage icm) {
+		reachImps = icm.getReachImps();
+		dayStart = icm.getDayStart();
+		dayEnd = icm.getDayEnd();
+		targetSegment = icm.getTargetSegment();
+		videoCoef = icm.getVideoCoef();
+		mobileCoef = icm.getMobileCoef();
+		id = icm.getId();
 
-			setStats(new CampaignStats(0, 0, 0));
-			setBudget(0.0);
-		}
-
-		public void setBudget(double d) {
-			budget = d;
-		}
-
-		public CampaignData(CampaignOpportunityMessage com) {
-			setDayStart(com.getDayStart());
-			setDayEnd(com.getDayEnd());
-			setId(com.getId());
-			setReachImps(com.getReachImps());
-			setTargetSegment(com.getTargetSegment());
-			mobileCoef = com.getMobileCoef();
-			videoCoef = com.getVideoCoef();
-			setStats(new CampaignStats(0, 0, 0));
-			setBudget(0.0);
-		}
-
-		@Override
-		public String toString() {
-			return "Campaign ID " + getId() + ": " + "day " + getDayStart() + " to "
-					+ getDayEnd() + " " + getTargetSegment().name() + ", reach: "
-					+ getReachImps() + " coefs: (v=" + videoCoef + ", m="
-					+ mobileCoef + ")";
-		}
-
-		public int impsTogo() {
-			return (int) Math.max(0, getReachImps() - getStats().getTargetedImps());
-		}
-
-		void setStats(CampaignStats s) {
-			stats.setValues(s);
-		}
-
-		public double getBudget() {
-			return budget;
-		}
-
-		public Long getReachImps() {
-			return reachImps;
-		}
-
-		public void setReachImps(Long reachImps) {
-			this.reachImps = reachImps;
-		}
-
-		public MarketSegment getTargetSegment() {
-			return targetSegment;
-		}
-
-		public void setTargetSegment(MarketSegment targetSegment) {
-			this.targetSegment = targetSegment;
-		}
-
-		public long getDayStart() {
-			return dayStart;
-		}
-
-		public void setDayStart(long dayStart) {
-			this.dayStart = dayStart;
-		}
-
-		public long getDayEnd() {
-			return dayEnd;
-		}
-
-		public void setDayEnd(long dayEnd) {
-			this.dayEnd = dayEnd;
-		}
-
-		public int getId() {
-			return id;
-		}
-
-		public void setId(int id) {
-			this.id = id;
-		}
-
-		public CampaignStats getStats() {
-			return stats;
-		}
-
+		stats = new CampaignStats(0, 0, 0);
+		budget = 0.0;
 	}
+
+	public void setBudget(double d) {
+		budget = d;
+	}
+
+	public CampaignData(CampaignOpportunityMessage com) {
+		dayStart = com.getDayStart();
+		dayEnd = com.getDayEnd();
+		id = com.getId();
+		reachImps = com.getReachImps();
+		targetSegment = com.getTargetSegment();
+		mobileCoef = com.getMobileCoef();
+		videoCoef = com.getVideoCoef();
+		stats = new CampaignStats(0, 0, 0);
+		budget = 0.0;
+	}
+
+	@Override
+	public String toString() {
+		return "Campaign ID " + id + ": " + "day " + dayStart + " to "
+				+ dayEnd + " " + targetSegment + ", reach: " + reachImps
+				+ " coefs: (v=" + videoCoef + ", m=" + mobileCoef + ")";
+	}
+
+	int impsTogo() {
+		return (int) Math.max(0, reachImps - stats.getTargetedImps());
+	}
+
+	void setStats(CampaignStats s) {
+		stats.setValues(s);
+	}
+
+	public AdxQuery[] getCampaignQueries() {
+		return campaignQueries;
+	}
+
+	public void setCampaignQueries(AdxQuery[] campaignQueries) {
+		this.campaignQueries = campaignQueries;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
+	
+}
