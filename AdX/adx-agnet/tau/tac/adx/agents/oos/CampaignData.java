@@ -59,7 +59,7 @@ public class CampaignData {
 				+ " coefs: (v=" + videoCoef + ", m=" + mobileCoef + ")";
 	}
 
-	int impsTogo() {
+	public int impsTogo() {
 		return (int) Math.max(0, reachImps - stats.getTargetedImps());
 	}
 
@@ -81,6 +81,46 @@ public class CampaignData {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public Set<MarketSegment> getTargetSegment() {
+		return targetSegment;
+	}
+
+	public void setTargetSegment(Set<MarketSegment> targetSegment) {
+		this.targetSegment = targetSegment;
+	}
+
+	public CampaignStats getStats() {
+		return stats;
+	}
+
+	public double getBudget() {
+		return budget;
+	}
+
+	public Long getReachImps() {
+		return reachImps;
+	}
+
+	public void setReachImps(Long reachImps) {
+		this.reachImps = reachImps;
+	}
+
+	public long getDayStart() {
+		return dayStart;
+	}
+
+	public void setDayStart(long dayStart) {
+		this.dayStart = dayStart;
+	}
+
+	public long getDayEnd() {
+		return dayEnd;
+	}
+
+	public void setDayEnd(long dayEnd) {
+		this.dayEnd = dayEnd;
 	}
 
 	

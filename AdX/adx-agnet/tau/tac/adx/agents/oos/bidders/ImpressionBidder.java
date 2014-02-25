@@ -56,7 +56,8 @@ public class ImpressionBidder {
 							.getMarketSegments();
 
 					for (MarketSegment marketSegment : segmentsList) {
-						if (campaign.getTargetSegment() == marketSegment) {
+						// TODO: this is very different from the git repository!!!
+						//if (campaign.getTargetSegment() == marketSegment) {
 							/*
 							 * among matching entries with the same campaign id,
 							 * the AdX randomly chooses an entry according to
@@ -67,7 +68,7 @@ public class ImpressionBidder {
 							++entCount;
 							bidBundle.addQuery(queries[i], rbid, new Ad(null),
 									campaign.getId(), 1);
-						}
+						//}
 					}
 					
 					if (segmentsList.size() == 0) {
