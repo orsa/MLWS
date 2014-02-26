@@ -17,6 +17,7 @@ import se.sics.tasim.props.SimulationStatus;
 import se.sics.tasim.props.StartInfo;
 import tau.tac.adx.ads.properties.AdType;
 import tau.tac.adx.agents.oos.CampaignData;
+import tau.tac.adx.agents.oos.bidders.CampaignBidder;
 import tau.tac.adx.agents.oos.bidders.ImpressionBidder;
 import tau.tac.adx.demand.CampaignStats;
 import tau.tac.adx.devices.Device;
@@ -44,8 +45,9 @@ import edu.umich.eecs.tac.props.BankStatus;
  */
 public class SampleAdNetwork extends Agent {
 	
-	ImpressionBidder impressionBidder;
-
+	private ImpressionBidder impressionBidder;
+	private CampaignBidder campaignBidder = CampaignBidder.getInstance(); // The singleton instance 
+	
 	private final Logger log = Logger
 			.getLogger(SampleAdNetwork.class.getName());
 
@@ -201,7 +203,7 @@ public class SampleAdNetwork extends Agent {
 		adxAgentAddress = campaignMessage.getAdxAgentAddress();
 
 		CampaignData campaignData = new CampaignData(initialCampaignMessage);
-		campaignData.setBudget(initialCampaignMessage.getReachImps() / 1000.0); // TODO: rethink on this calculation
+		campaignData.setBudget(initialCampaignMessage.getReachImps() / 1000.0); // TODO: Shelly - rethink on this calculation
 
 		/*
 		 * The initial campaign is already allocated to our agent so we add it
@@ -233,10 +235,12 @@ public class SampleAdNetwork extends Agent {
 		 * therefore the total number of impressions may be treated as a reserve
 		 * (upper bound) price for the auction.
 		 */
-		long cmpBid = 1 + Math.abs((randomGenerator.nextLong()) // TODO: Or; here we determine the bid.
-				% (com.getReachImps()));
-
-		double cmpBidUnits = cmpBid / 1000.0;
+//		long cmpBid = 1 + Math.abs((randomGenerator.nextLong())
+//				% (com.getReachImps()));
+//
+//		double cmpBidUnits = cmpBid / 1000.0;
+		
+		double cmpBidUnits = campaignBidder.getBid(pendingCampaign);  // TODO: Or; here we determine the bid.
 
 		log.info("Day " + day + ": Campaign total budget bid: " + cmpBidUnits);
 
@@ -261,7 +265,7 @@ public class SampleAdNetwork extends Agent {
 
 		/* Note: Campaign bid is in millis */
 		AdNetBidMessage bids = new AdNetBidMessage(ucsBid, pendingCampaign.getId(),  // here we send a bid for campaign oppor. and ucs combined.
-				cmpBid);
+				(long)cmpBidUnits);
 		sendMessage(demandAgentAddress, bids);
 	}
 
