@@ -280,6 +280,10 @@ public class SampleAdNetwork extends Agent {
 
 		adNetworkDailyNotification = notificationMessage;
 
+		campaignBidder.updateCampaignes(notificationMessage.getCampaignId(),
+										notificationMessage.getWinner(),
+										notificationMessage.getPrice()); // [orsa:] collect data for ML
+		
 		log.info("Day " + day + ": Daily notification for campaign "
 				+ adNetworkDailyNotification.getCampaignId());
 
