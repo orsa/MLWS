@@ -136,7 +136,7 @@ public class Coordinator {
 		 * to our allocated-campaigns list.
 		 */
 		log.info("Day " + day + ": Allocated campaign - " + campaignData);
-		myCampaigns.put(initialCampaignMessage.getId(), campaignData);
+		getMyCampaigns().put(initialCampaignMessage.getId(), campaignData);
 	}
 
 	
@@ -308,7 +308,7 @@ public class Coordinator {
 			/* add campaign to list of won campaigns */
 			pendingCampaign.setBudget(notificationMessage.getCost());
 
-			myCampaigns.put(pendingCampaign.getId(), pendingCampaign);
+			getMyCampaigns().put(pendingCampaign.getId(), pendingCampaign);
 
 			campaignAllocatedTo = " WON at cost "
 					+ notificationMessage.getCost();
@@ -369,7 +369,7 @@ public class Coordinator {
 			int cmpId = campaignKey.getCampaignId();
 			CampaignStats cstats = campaignReport.getCampaignReportEntry(
 					campaignKey).getCampaignStats();
-			myCampaigns.get(cmpId).setStats(cstats);
+			getMyCampaigns().get(cmpId).setStats(cstats);
 
 			log.info("Day " + day + ": Updating campaign " + cmpId + " stats: "
 					+ cstats.getTargetedImps() + " tgtImps "
@@ -438,7 +438,7 @@ public class Coordinator {
 		/* initial bid between 0.1 and 0.2 */
 		ucsBid = 0.1 + 0.1*randomGenerator.nextDouble(); //TODO: Omer; check this out - the ucs bit for the first day.
 		
-		myCampaigns = new HashMap<Integer, CampaignData>();
+		setMyCampaigns(new HashMap<Integer, CampaignData>());
 	}
 
 	public void finiSimulation() {
@@ -460,6 +460,16 @@ public class Coordinator {
 		}
 		
 		return instance;
+	}
+
+
+	public Map<Integer, CampaignData> getMyCampaigns() {
+		return myCampaigns;
+	}
+
+
+	public void setMyCampaigns(Map<Integer, CampaignData> myCampaigns) {
+		this.myCampaigns = myCampaigns;
 	}
 
 }
