@@ -7,6 +7,8 @@ import tau.tac.adx.report.adn.MarketSegment;
 
 public class CampaignBidder {
 	
+	private static Set<MarketSegment> pendingCampaignTarget;
+	
 	// this array tells for each target how many campaigns+1 we got for it. the reason for the + 1 is to avoid division by 0.						
 	private static int AudienceBindedCampaigns[] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 	
@@ -89,11 +91,46 @@ public class CampaignBidder {
 	
 	private double getAudienceScore(Set<MarketSegment> targetSegment) {
 		
-		/* map target segment into 'index'
-		 */
-		int index =0;
-		for ( MarketSegment ms : targetSegment) {
+		/* map target segment into 'index' */
+		int index = getTargetIndex(targetSegment);
 		
+		/* 
+		 * the score will be the probability of the segment divided by the number of campaigns we already have for segments  
+		 */
+		return AudienceProb[index]/AudienceBindedCampaigns[index];
+	}
+
+	/*
+	 * A method to update the bidder for every campaign bidding result , in order to 
+	 * store a history.
+	 */
+	public void updateCampaignes(int campaignId, String winner, double price ) {
+		
+	// todo: save the data - maybe also process some calculations.
+		
+		
+	
+	}
+
+	public void updateNewPendingCampaign(Set<MarketSegment> targetSegment) {
+		
+		pendingCampaignTarget = targetSegment;
+		
+	}
+	
+	public void updateWonPendingCampaign() {
+		
+		/* map target segment into 'index' */
+		int index = getTargetIndex(pendingCampaignTarget);
+		
+		++AudienceBindedCampaigns[index];
+		
+	}
+	
+	private int getTargetIndex(Set<MarketSegment> targetSegment) {
+		int index=0;
+		for ( MarketSegment ms : targetSegment) {
+			
 			switch (ms) {
 			case MALE:
 				index += 1;
@@ -117,20 +154,8 @@ public class CampaignBidder {
 				break;
 			 
 			}
-			
 		}
-		/* the score will be the probability of the segment divided by the number of campaigns we already have for segments */
-		return AudienceProb[index]/AudienceBindedCampaigns[index];
-	}
-
-	/*
-	 * A method to update the bidder for every campaign bidding result , in order to 
-	 * store a history.
-	 */
-	public void updateCampaignes(int campaignId, String winner, double price ) {
-		
-	// todo: save the data - maybe also process some calculations.
-		
+		return index;
 	}
 
 }
