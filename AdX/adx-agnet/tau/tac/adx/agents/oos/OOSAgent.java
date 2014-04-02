@@ -24,10 +24,10 @@ import edu.umich.eecs.tac.props.BankStatus;
  * @author Mariano Schain
  * 
  */
-public class SampleAdNetwork extends Agent {
+public class OOSAgent extends Agent {
 		
 	private final Logger log = Logger
-			.getLogger(SampleAdNetwork.class.getName());
+			.getLogger(OOSAgent.class.getName());
 	
 	private Coordinator coordinator = Coordinator.getInstance(this);
 
@@ -46,7 +46,7 @@ public class SampleAdNetwork extends Agent {
 	public String adxAgentAddress;
 
 
-	public SampleAdNetwork() {	}
+	public OOSAgent() {	}
 
 	@Override
 	protected void messageReceived(Message message) {

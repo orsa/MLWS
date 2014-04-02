@@ -38,7 +38,7 @@ public class Coordinator {
 
 	private static Coordinator instance = null;
 	
-	public SampleAdNetwork messenger;
+	public OOSAgent messenger;
 	public ImpressionBidder impressionBidder = ImpressionBidder.getInstance();
 	public CampaignBidder campaignBidder = CampaignBidder.getInstance(); // The singleton instance 
 	
@@ -76,6 +76,7 @@ public class Coordinator {
 	 * by our agent.
 	 */
 	private Map<Integer, CampaignData> myCampaigns; // TODO: also campaigns that already ended? NO.
+	// TODO: delete campaigns that have ended!
 	
 	/*
 	 * the bidBundle to be sent daily to the AdX
@@ -345,8 +346,16 @@ public class Coordinator {
 			bidBundleHistory.add(bidBundle);
 		}
 		
-		impressionBidder.fillBidBundle(day);
-		bidBundle = impressionBidder.getBidBundle();
+		impressionBidder.updateDay(day);
+		impressionBidder.setPreviousBidBundle(bidBundle);
+		try {
+			impressionBidder.fillBidBundle();
+			bidBundle = impressionBidder.getBidBundle();
+		} catch (Exception e) {
+			// TODO What to do?
+			bidBundle = null;
+		}
+		
 		
 		if (bidBundle != null) {
 			log.info("Day " + day + ": Sending BidBundle");
@@ -451,13 +460,13 @@ public class Coordinator {
 	
 	
 	/* Infrastructure */	
-	public Coordinator(SampleAdNetwork sampleAdNetwork) {
+	public Coordinator(OOSAgent sampleAdNetwork) {
 		this.messenger = sampleAdNetwork;
 		this.adNetworkDailyNotificationsHistory = new LinkedList<AdNetworkDailyNotification>();
 		this.bidBundleHistory = new LinkedList<AdxBidBundle>();
 	}
 
-	public static Coordinator getInstance(SampleAdNetwork sampleAdNetwork) {
+	public static Coordinator getInstance(OOSAgent sampleAdNetwork) {
 		if (instance == null) {
 			instance = new Coordinator(sampleAdNetwork);
 		}
