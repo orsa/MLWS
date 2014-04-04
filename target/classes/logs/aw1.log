@@ -1,0 +1,26 @@
+04/04 12:18:17 SEVERE agentware.SimClient|could not create an agent instance of OrOmerShelly.OOSAgent
+java.lang.NoClassDefFoundError: OrOmerShelly/oos/bidders/ImpressionBidder
+	at OrOmerShelly.Coordinator.<init>(Coordinator.java:43)
+	at OrOmerShelly.Coordinator.getInstance(Coordinator.java:472)
+	at OrOmerShelly.OOSAgent.<init>(OOSAgent.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at java.lang.Class.newInstance(Class.java:374)
+	at tau.tac.adx.agentware.SimClient.createAgentInstance(SimClient.java:229)
+	at tau.tac.adx.agentware.SimClient.<init>(SimClient.java:137)
+	at tau.tac.adx.agentware.Main.main(Main.java:112)
+Caused by: java.lang.ClassNotFoundException: OrOmerShelly.oos.bidders.ImpressionBidder
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 11 more
+04/04 12:18:17 SEVERE agentware.SimClient|************************************************************
+04/04 12:18:17 SEVERE agentware.SimClient|* Agent Setup Failed
+04/04 12:18:17 SEVERE agentware.SimClient|* could not setup the agent
+04/04 12:18:17 SEVERE agentware.SimClient|************************************************************
