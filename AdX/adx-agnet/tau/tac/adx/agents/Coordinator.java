@@ -75,8 +75,8 @@ public class Coordinator {
 	 * We maintain a collection (mapped by the campaign id) of the campaigns won
 	 * by our agent.
 	 */
-	private Map<Integer, CampaignData> myCampaigns; // TODO: also campaigns that already ended? NO.
-	// TODO: delete campaigns that have ended!
+	private Map<Integer, CampaignData> myCampaigns; // TODO: also campaigns that already ended? YES!!!
+	// TODO: add a flag to campaigns - active or not
 	
 	/*
 	 * the bidBundle to be sent daily to the AdX
