@@ -11,7 +11,7 @@
 		https://code.google.com/p/tac-adx/
 	1.2	The folder named "adx-server-1.0.0.0" contains all that is needed to run
 		an instance of the TAC-ADX game server.
-	1.3	The folder named "adx-server-1.0.0.0" contains all that is needed to run
+	1.3	The folder named "adx-agent-1.0.0.0" contains all that is needed to run
 		an example agent that competes in the tournament and connects to the ADX
 		server.
 	1.4	All relevant classes, interfaces and messages needed for the agent

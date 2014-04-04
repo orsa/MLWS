@@ -1,0 +1,10 @@
+04/04 09:22:05 INFO file.FileDatabase|infodb: database opened as /Users/orsa/Dev/MLWS/AdX/adx-server/infodb
+04/04 09:22:05 INFO common.BlockingViewerServer|viewer server started at *:4042
+04/04 09:22:06 INFO file.FileDatabase|infodb: added table localhost_state
+04/04 09:22:06 INFO file.FileDatabase|infodb: added table localhost_comingparticipants
+04/04 09:22:06 INFO file.FileDatabase|infodb: added table localhost_comingsimulations
+04/04 09:22:06 INFO file.FileDatabase|infodb: added table localhost_competitionparts
+04/04 09:22:06 INFO file.FileDatabase|infodb: added table localhost_competitions
+04/04 09:22:06 INFO file.FileDatabase|infodb: added table localhost_competitionresults
+04/04 06:22:06 INFO sim.Admin|adding manager for simulation type tac13adx
+04/04 06:22:06 INFO server.TACTGateway|TACT Server started at *:6502
