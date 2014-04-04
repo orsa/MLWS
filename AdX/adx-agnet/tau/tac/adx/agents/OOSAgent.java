@@ -1,4 +1,4 @@
-package tau.tac.adx.agents.oos;
+package tau.tac.adx.agents;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
