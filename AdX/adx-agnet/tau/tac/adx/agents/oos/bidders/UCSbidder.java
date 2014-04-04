@@ -1,11 +1,11 @@
 package tau.tac.adx.agents.oos.bidders;
 
-import tau.tac.adx.agents.oos.Coordinator;
+import tau.tac.adx.agents.CampaignData;
+import tau.tac.adx.agents.Coordinator;
 
 import java.util.List;
 import java.util.Map;
 
-import tau.tac.adx.agents.oos.CampaignData;
 
 
 	

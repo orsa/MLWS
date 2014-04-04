@@ -66,7 +66,7 @@ public class CampaignBidder {
 		return instance;
 	}
 	
-	public double getBid(tau.tac.adx.agents.oos.CampaignData newCampaign){
+	public double getBid(tau.tac.adx.agents.CampaignData newCampaign){
 	
 		/*
 		 * here we do the magic.
