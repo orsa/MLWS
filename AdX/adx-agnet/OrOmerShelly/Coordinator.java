@@ -42,6 +42,7 @@ public class Coordinator {
 	public OOSAgent messenger;
 	public ImpressionBidder impressionBidder = ImpressionBidder.getInstance();
 	public CampaignBidder campaignBidder = CampaignBidder.getInstance(); // The singleton instance 
+	public UCSbidder ucsbidder=UCSbidder.getInstance();
 	
 	/**
 	 * Messages received:
@@ -254,7 +255,7 @@ public class Coordinator {
 			double prevUcsBid = ucsBid;
 
 			/* UCS Bid should not exceed 0.2 */
-			ucsBid = Math.min(0.1 + 0.1*randomGenerator.nextDouble(), prevUcsBid * (1 + ucsTargetLevel - ucsLevel)); // TODO: Omer; here we determine the ucs bid.
+			ucsBid = ucsbidder.getBid(this);
 
 			log.info("Day " + day + ": Adjusting ucs bid: was " + prevUcsBid
 					+ " level reported: " + ucsLevel + " target: "
@@ -426,6 +427,7 @@ public class Coordinator {
 	public void handleAdNetworkReport(AdNetworkReport adnetReport) {
 		// TODO: Shelly - read class notes - why commented out? 
 		// This is a map per AdNetQuery of wins/costs/bids result for impression auction - go over this and use it
+		ucsbidder.updateUCS(adnetReport, this, this.getMyCampaigns());
 		log.info("Day "+ day + " : AdNetworkReport");
 		//adnetReport.keys().iterator().next().
 		/*
