@@ -26,6 +26,7 @@ public class UCSbidder {
 	 * 4. Perhaps we want to pay a bit more wisely on the first 5-6 days? (maybe a strategy we have?)
 	 * 5. Still need to calculate the reinforcements
 	 */
+	double amountPaidYesterday;
 	final int stateA = 0;
 	final int stateB = 1;
 	final int stateC = 2;
@@ -147,12 +148,10 @@ public class UCSbidder {
 	double Q(int s, int a) {
 		return Q[s][a];
 	}
-	public void updateUCS(AdNetworkReport anp, Coordinator co, Map<Integer, CampaignData> myCampaigns, double amountPaidYesterday, int place, int currentDay ) {
+	public void updateUCS(AdNetworkReport anp, Coordinator co, Map<Integer, CampaignData> myCampaigns) {
 		/*
-		 * perhaps amountPaidYesterday will not be a parameter,
-		 *  but will be passed somewhere else? 
 		 */
-		double reinforecement=findReinforcement(anp, co, currentDay);
+		double reinforecement=findReinforcement(anp, co, co.day);
 		int nextState=-1;
 		
 		double q = Q(state, action);
