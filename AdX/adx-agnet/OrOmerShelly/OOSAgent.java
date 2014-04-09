@@ -1,6 +1,5 @@
 package OrOmerShelly;
 
-import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -9,8 +8,6 @@ import se.sics.tasim.aw.Agent;
 import se.sics.tasim.aw.Message;
 import se.sics.tasim.props.SimulationStatus;
 import se.sics.tasim.props.StartInfo;
-import tau.tac.adx.parser.BankStatusHandler;
-import tau.tac.adx.parser.BankStatusParser;
 import tau.tac.adx.props.AdxBidBundle;
 import tau.tac.adx.props.PublisherCatalog;
 import tau.tac.adx.report.adn.AdNetworkReport;
@@ -19,7 +16,6 @@ import tau.tac.adx.report.demand.AdNetworkDailyNotification;
 import tau.tac.adx.report.demand.CampaignOpportunityMessage;
 import tau.tac.adx.report.demand.CampaignReport;
 import tau.tac.adx.report.demand.InitialCampaignMessage;
-import tau.tac.adx.report.demand.campaign.auction.CampaignAuctionReport;
 import tau.tac.adx.report.publisher.AdxPublisherReport;
 import edu.umich.eecs.tac.props.BankStatus;
 
@@ -79,15 +75,13 @@ public class OOSAgent extends Agent {
 				handleStartInfo((StartInfo) content);
 			} else if (content instanceof BankStatus) {
 				coordinator.handleBankStatus((BankStatus) content);
-			} else if (content instanceof CampaignAuctionReport) {
-				coordinator.handleCampaignAuctionReport((CampaignAuctionReport) content);
 			} else {
 				log.info("UNKNOWN Message Received: " + content);
 			}
 
 		} catch (NullPointerException e) {
 			this.log.log(Level.SEVERE,
-					"Exception thrown while trying to parse message: " + e + " : " + Arrays.asList(e.getStackTrace()));
+					"Exception thrown while trying to parse message." + e);
 			return;
 		}
 	}
