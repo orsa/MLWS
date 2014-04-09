@@ -12,23 +12,16 @@ public class ImpressionParameters {
 	private Device device;
 	private AdType adType;
 	
-	public ImpressionParameters() {	}
 	
-	public ImpressionParameters(Set<MarketSegment> marketSegments,
-			Device device, AdType adType) {
-		this.marketSegments = marketSegments;
-		this.device = device;
-		this.adType = adType;
-	}
-
+	
 	public Set<MarketSegment> getMarketSegments() {
 		return marketSegments;
 	}
-
+	
 	public void setMarketSegments(Set<MarketSegment> marketSegments) {
 		this.marketSegments = marketSegments;
 	}
-
+	
 	public Device getDevice() {
 		return device;
 	}
