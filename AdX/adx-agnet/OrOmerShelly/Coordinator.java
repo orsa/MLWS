@@ -428,7 +428,7 @@ public class Coordinator {
 		// TODO: Shelly - read class notes - why commented out? 
 		// This is a map per AdNetQuery of wins/costs/bids result for impression auction - go over this and use it
 		ucsbidder.updateUCS(adnetReport, this, this.getMyCampaigns());
-		log.info("Day "+ day + " : AdNetworkReport");
+		log.info("Day "+ day + " : AdNetworkReport = " + adnetReport);
 		//adnetReport.keys().iterator().next().
 		/*
 		 for (AdNetworkKey adnetKey : adnetReport.keys()) {
@@ -441,6 +441,15 @@ public class Coordinator {
 			}
 		}
         */
+		
+		for (AdNetworkKey adnetKey : adnetReport.keys()) {
+			AdNetworkReportEntry adnetEntry = adnetReport.getAdNetworkReportEntry(adnetKey);
+			// TODO: get for a certain campaign id all wins and losses and calculate revenues.
+			// if won, update instance with the second prize paid.
+		}
+		
+		// TODO impressionBidder.completeLastIntsancesAndUpdate();
+
 	}
 	
 

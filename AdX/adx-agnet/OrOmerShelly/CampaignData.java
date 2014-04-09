@@ -56,11 +56,22 @@ public class CampaignData {
 	public String toString() {
 		return "Campaign ID " + id + ": " + "day " + dayStart + " to "
 				+ dayEnd + " " + targetSegment + ", reach: " + reachImps
-				+ " coefs: (v=" + videoCoef + ", m=" + mobileCoef + ")";
+				+ " coefs: (v=" + videoCoef + ", m=" + mobileCoef + ")"
+				+ " budget: " + budget;
 	}
 
 	public int impsTogo() {
 		return (int) Math.max(0, reachImps - stats.getTargetedImps());
+	}
+	
+	/* Campaign is defines as active if:
+	 * 1. It's not yet ended (days)
+	 * 2. It has impsTogo > 0
+	*/ 
+	public boolean isActive(int currentDay) { // currentDay depends on context
+		return (impsTogo() > 0
+				&& currentDay <= getDayEnd()
+				&& currentDay >= getDayStart());
 	}
 
 	void setStats(CampaignStats s) {
@@ -123,6 +134,22 @@ public class CampaignData {
 		this.dayEnd = dayEnd;
 	}
 
+	public double getVideoCoef() {
+		return videoCoef;
+	}
+
+	public void setVideoCoef(double videoCoef) {
+		this.videoCoef = videoCoef;
+	}
+
+	public double getMobileCoef() {
+		return mobileCoef;
+	}
+
+	public void setMobileCoef(double mobileCoef) {
+		this.mobileCoef = mobileCoef;
+	}
+	
 	
 	
 }
