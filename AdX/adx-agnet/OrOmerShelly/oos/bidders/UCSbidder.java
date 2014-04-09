@@ -1,20 +1,15 @@
-package tau.tac.adx.agents.oos.bidders;
-
-import tau.tac.adx.agents.oos.Coordinator;
+package OrOmerShelly.oos.bidders;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import tau.tac.adx.agents.oos.CampaignData;
+import OrOmerShelly.CampaignData;
+import OrOmerShelly.Coordinator;
+
 import tau.tac.adx.report.adn.AdNetworkKey;
 import tau.tac.adx.report.adn.AdNetworkReport;
 import tau.tac.adx.report.adn.MarketSegment;
-
-
-	
-
-
 
 public class UCSbidder {
 	/*
