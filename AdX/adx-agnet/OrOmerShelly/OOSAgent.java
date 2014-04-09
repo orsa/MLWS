@@ -8,6 +8,8 @@ import se.sics.tasim.aw.Agent;
 import se.sics.tasim.aw.Message;
 import se.sics.tasim.props.SimulationStatus;
 import se.sics.tasim.props.StartInfo;
+import tau.tac.adx.parser.BankStatusHandler;
+import tau.tac.adx.parser.BankStatusParser;
 import tau.tac.adx.props.AdxBidBundle;
 import tau.tac.adx.props.PublisherCatalog;
 import tau.tac.adx.report.adn.AdNetworkReport;
