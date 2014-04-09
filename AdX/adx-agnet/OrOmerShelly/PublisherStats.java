@@ -2,38 +2,41 @@ package OrOmerShelly;
 
 public class PublisherStats {
 
-	private int popularity;
-	private int videoOrientation;
-	private int textOrientation;
+	private long popularity;
+	private long videoOrientation;
+	private long textOrientation;
 	
-	// TODO: check if orientation could be null?
-	public PublisherStats(int popularity, Integer videoOrientation, Integer textOrientation) {
+	public PublisherStats(long popularity, long videoOrientation, long textOrientation) {
 		this.popularity = popularity;
 		this.videoOrientation = videoOrientation;
 		this.textOrientation = textOrientation;
 	}
 	
-	public int getPopularity() {
+	public long getPopularity() {
 		return popularity;
 	}
 	
-	public void setPopularity(int popularity) {
+	public void setPopularity(long popularity) {
 		this.popularity = popularity;
 	}
 	
-	public int getVideoOrientation() {
+	public long getVideoOrientation() {
 		return videoOrientation;
 	}
 	
-	public void setVideoOrientation(int videoOrientation) {
+	public void setVideoOrientation(long videoOrientation) {
 		this.videoOrientation = videoOrientation;
 	}
 	
-	public int getTextOrientation() {
+	public long getTextOrientation() {
 		return textOrientation;
 	}
 	
-	public void setTextOrientation(int textOrientation) {
+	public void setTextOrientation(long textOrientation) {
 		this.textOrientation = textOrientation;
 	}	
+	
+	public String toString() {
+		return "Popularity = " + popularity + "; VideoOrientation = " + videoOrientation + "; TextOrientation = " + textOrientation;
+	}
 }

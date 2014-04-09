@@ -1,16 +1,15 @@
 package OrOmerShelly.oos.bidders;
 
-import tau.tac.adx.agents.CampaignData;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import OrOmerShelly.CampaignData;
 import OrOmerShelly.Coordinator;
 
-
-
-	
-
-
+import tau.tac.adx.report.adn.AdNetworkKey;
+import tau.tac.adx.report.adn.AdNetworkReport;
+import tau.tac.adx.report.adn.MarketSegment;
 
 public class UCSbidder {
 	/*
@@ -22,6 +21,7 @@ public class UCSbidder {
 	 * 4. Perhaps we want to pay a bit more wisely on the first 5-6 days? (maybe a strategy we have?)
 	 * 5. Still need to calculate the reinforcements
 	 */
+	double amountPaidYesterday;
 	final int stateA = 0;
 	final int stateB = 1;
 	final int stateC = 2;
@@ -143,12 +143,10 @@ public class UCSbidder {
 	double Q(int s, int a) {
 		return Q[s][a];
 	}
-	public void updateUCS(Map<Integer, CampaignData> myCampaigns, double amountPaidYesterday, int place, int currentDay ) {
+	public void updateUCS(AdNetworkReport anp, Coordinator co, Map<Integer, CampaignData> myCampaigns) {
 		/*
-		 * perhaps amountPaidYesterday will not be a parameter,
-		 *  but will be passed somewhere else? 
 		 */
-		double reinforecement=findReinforcement();
+		double reinforecement=findReinforcement(anp, co, co.day);
 		int nextState=-1;
 		
 		double q = Q(state, action);
@@ -186,8 +184,59 @@ public class UCSbidder {
 		
 	}
 	
-	double findReinforcement() {
-		return 0;
+	double findReinforcement(AdNetworkReport anp, Coordinator co, int day) {
+		int misses=0, hits=0;
+		boolean hitForCampaign=false;
+		for (AdNetworkKey k : anp.keys()) {
+			hitForCampaign=false;
+			Map<Integer, CampaignData> myCampaigns=co.getMyCampaigns();
+			//CampaignData currentCampaign=myCampaigns.get(k.getCampaignId());
+			//Set<MarketSegment> currentSegment= currentCampaign.getTargetSegment();
+			for (CampaignData cd : myCampaigns.values()) {
+				if (relevantCampaign(cd, day) && matchSegment(cd, k)) {
+					hits+=anp.getEntry(k).getBidCount();
+					hitForCampaign=true;
+				}
+			}
+			if (!hitForCampaign) {
+				misses+=anp.getEntry(k).getBidCount();
+			}
+		}
+		int activeCampagins=0;
+		for (int i : co.getMyCampaigns().keySet()) {
+			if (co.getMyCampaigns().get(i).getDayEnd()>=co.day) activeCampagins++;
+		}
+		return (((double)misses)/(misses+hits))*activeCampagins;
+	}
+	
+	boolean relevantCampaign(CampaignData cd, int day) {
+		if (cd.impsTogo()>0 && cd.getDayEnd()>=day) return true;
+		return false;
+	}
+	
+	boolean matchSegment(CampaignData ms, AdNetworkKey k) {
+		Set<MarketSegment> s=ms.getTargetSegment();
+		for (MarketSegment m : s) {
+			if (m.name().equals("MALE")) {
+				if (k.getGender().name().equals("female")) return false;
+			}
+			if (m.name().equals("FEMALE")) {
+				if (k.getGender().name().equals("male")) return false;
+			}
+			if (m.name().equals("YOUNG")) {
+				if ((k.getAge().name().equals("Age_45_54")) || (k.getAge().name().equals("Age_55_64")) || (k.getAge().name().equals("Age_65_PLUS"))) return false;
+			}
+			if (m.name().equals("OLD")) {
+				if ((k.getAge().name().equals("Age_18_24")) || (k.getAge().name().equals("Age_25_34")) || (k.getAge().name().equals("Age_35_44"))) return false;
+			}
+			if (m.name().equals("LOW_INCOME")) {
+				if ((k.getIncome().name().equals("high")) || (k.getIncome().name().equals("very_high"))) return false;
+			}
+			if (m.name().equals("HIGH_INCOME")) {
+				if ((k.getIncome().name().equals("low")) || (k.getIncome().name().equals("medium"))) return false;
+			}
+		}
+		return true;
 	}
 	
 	int findFinalState(double reinforcement) {
