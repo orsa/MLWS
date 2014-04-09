@@ -259,21 +259,13 @@ public class Coordinator {
 		 * therefore the total number of impressions may be treated as a reserve
 		 * (upper bound) price for the auction.
 		 */
-<<<<<<< HEAD
+
 //		long cmpBid = 1 + Math.abs((randomGenerator.nextLong())
 //				% (com.getReachImps()));
 //
 //		double cmpBidUnits = cmpBid / 1000.0;
 		
 		double cmpBidUnits = campaignBidder.getBid(pendingCampaign, qualityScore);  // TODO: Or; here we determine the bid.
-=======
-		//		long cmpBid = 1 + Math.abs((randomGenerator.nextLong())
-		//				% (com.getReachImps()));
-		//
-		//		double cmpBidUnits = cmpBid / 1000.0;
-
-		double cmpBidUnits = campaignBidder.getBid(pendingCampaign);  // TODO: Or; here we determine the bid.
->>>>>>> FETCH_HEAD
 
 		log.info("****OUR qualityis: " + qualityScore + " ****");
 		log.info("Day " + day + ": Campaign total budget bid: " + cmpBidUnits);
