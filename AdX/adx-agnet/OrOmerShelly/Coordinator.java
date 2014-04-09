@@ -239,8 +239,8 @@ public class Coordinator {
 //				% (com.getReachImps()));
 //
 //		double cmpBidUnits = cmpBid / 1000.0;
-		
-		double cmpBidUnits = campaignBidder.getBid(pendingCampaign);  // TODO: Or; here we determine the bid.
+		log.info("Quality Score = " + qualityScore);
+		double cmpBidUnits = campaignBidder.getBid(pendingCampaign, qualityScore); // TODO: Or; here we determine the bid.
 
 		log.info("Day " + day + ": Campaign total budget bid: " + cmpBidUnits);
 
